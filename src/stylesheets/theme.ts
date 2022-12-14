@@ -58,9 +58,9 @@ export const theme: DefaultTheme = {
   },
   typography: {
     fontFamily: {
-      sans: "Inter, sans-serif",
-      serif: "Georgia, serif",
-      mono: "Menlo, monospace",
+      sans: "Lato",
+      serif: "Georgia",
+      mono: "Menlo",
     },
     fontSize: {
       xs: "0.75rem",

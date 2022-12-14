@@ -2,7 +2,7 @@ import "styled-components";
 
 declare module "styled-components" {
   export interface DefaultTheme {
-    colors: {
+    colors?: {
       background: string;
       onBackground: string;
       surface: string;
@@ -24,7 +24,7 @@ declare module "styled-components" {
       error: string;
       onError: string;
     };
-    spacing: {
+    spacing?: {
       0: string;
       1: string;
       2: string;
@@ -50,15 +50,19 @@ declare module "styled-components" {
       80: string;
       96: string;
     };
-    screens: {
+    screens?: {
       sm: string;
       md: string;
       lg: string;
       xl: string;
       "2xl": string;
     };
-    typography: {
-      fontFamily: string[];
+    typography?: {
+      fontFamily: {
+        sans: string;
+        serif: string;
+        mono: string;
+      };
       fontSize: {
         xs: string;
         sm: string;
@@ -74,8 +78,18 @@ declare module "styled-components" {
         "8xl": string;
         "9xl": string;
       };
+      fontWeight: {
+        hairline: number;
+        thin: number;
+        light: number;
+        normal: number;
+        medium: number;
+        semibold: number;
+        bold: number;
+        extrabold: number;
+        black: number;
+      };
       lineHeight: {
-        DEFAULT: number;
         none: number;
         tight: number;
         snug: number;
@@ -84,7 +98,6 @@ declare module "styled-components" {
         loose: number;
       };
       letterSpacing: {
-        DEFAULT: string;
         tighter: string;
         tight: string;
         normal: string;
@@ -93,13 +106,14 @@ declare module "styled-components" {
         widest: string;
       };
     };
-    borderRadius: {
+    borderRadius?: {
       DEFAULT: string;
       none: string;
       sm: string;
       md: string;
       lg: string;
       xl: string;
+      "2xl": string;
       full: string;
     };
   }

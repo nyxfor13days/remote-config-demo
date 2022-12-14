@@ -2,7 +2,7 @@ import "styled-components";
 
 declare module "styled-components" {
   export interface DefaultTheme {
-    colors?: {
+    colors: {
       background: string;
       onBackground: string;
       surface: string;
@@ -24,7 +24,7 @@ declare module "styled-components" {
       error: string;
       onError: string;
     };
-    spacing?: {
+    spacing: {
       0: string;
       1: string;
       2: string;
@@ -50,14 +50,14 @@ declare module "styled-components" {
       80: string;
       96: string;
     };
-    screens?: {
+    screens: {
       sm: string;
       md: string;
       lg: string;
       xl: string;
       "2xl": string;
     };
-    typography?: {
+    typography: {
       fontFamily: {
         sans: string;
         serif: string;
@@ -106,7 +106,7 @@ declare module "styled-components" {
         widest: string;
       };
     };
-    borderRadius?: {
+    borderRadius: {
       DEFAULT: string;
       none: string;
       sm: string;

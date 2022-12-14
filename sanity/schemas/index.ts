@@ -1,1 +1,3 @@
-export const schemaTypes = []
+import colors from './colors'
+
+export const schemaTypes = [colors]

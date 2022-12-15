@@ -13,14 +13,6 @@ declare module "styled-components" {
       onPrimary: string;
       primaryContainer: string;
       onPrimaryContainer: string;
-      secondary: string;
-      onSecondary: string;
-      secondaryContainer: string;
-      onSecondaryContainer: string;
-      tertiary: string;
-      onTertiary: string;
-      tertiaryContainer: string;
-      onTertiaryContainer: string;
       error: string;
       onError: string;
     };

@@ -11,7 +11,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body: {
+  body {
     font-family: ${({ theme }) => theme.typography.fontFamily.sans}, sans-serif;
     font-size: ${({ theme }) => theme.typography.fontSize.base};
     line-height: ${({ theme }) => theme.typography.lineHeight.normal};

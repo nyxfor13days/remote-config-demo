@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   *, *::after, *::before {
@@ -23,5 +23,23 @@ export default createGlobalStyle`
     text-decoration: underline;
     color: ${({ theme }) => theme.colors.onBackground};
     underline-offset: ${({ theme }) => theme.spacing[2]};
+  }
+`;
+
+export const Container = styled.div`
+  max-width: ${({ theme }) => theme.screens.sm};
+  margin: 0 auto;
+  padding: 0 ${({ theme }) => theme.spacing[4]};
+
+  @media (min-width: ${({ theme }) => theme.screens.md}) {
+    max-width: ${({ theme }) => theme.screens.md};
+  }
+
+  @media (min-width: ${({ theme }) => theme.screens.lg}) {
+    max-width: ${({ theme }) => theme.screens.lg};
+  }
+
+  @media (min-width: ${({ theme }) => theme.screens.xl}) {
+    max-width: ${({ theme }) => theme.screens.xl};
   }
 `;

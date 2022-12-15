@@ -1,10 +1,11 @@
 import Header from "../../components/Header";
+import { Container } from "../../stylesheets/GlobalStyles";
 
 const Home = () => {
   return (
-    <div>
+    <Container>
       <Header />
-    </div>
+    </Container>
   );
 };
 
